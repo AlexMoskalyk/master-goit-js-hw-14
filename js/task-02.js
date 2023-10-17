@@ -16,8 +16,10 @@ function createMarkup(arr) {
     li.textContent = item;
     li.classList.add("item");
 
-    ul.append(li);
+    return li;
   });
+
+  ul.append(...markUp);
 }
 
 createMarkup(ingredients);
